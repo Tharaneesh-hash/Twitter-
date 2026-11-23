@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micro Blogging App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>MicroBlog</h1>
+        <p>Share your thoughts with the world!</p>
+    </header>
+
+    <div class="container">
+
+        <!-- Create Post -->
+        <section class="post-box">
+            <h2>Create a Post</h2>
+            <input type="text" id="username"
+                   placeholder="Enter your username">
+
+            <textarea id="postContent"
+                placeholder="What's happening?"></textarea>
+
+            <button onclick="createPost()">Post</button>
+        </section>
+
+        <!-- Users -->
+        <section class="users-box">
+            <h2>Discover People</h2>
+            <div id="usersList"></div>
+        </section>
+
+        <!-- Feed -->
+        <section class="feed">
+            <h2>Your Feed</h2>
+            <div id="postsList"></div>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
